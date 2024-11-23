@@ -1,7 +1,5 @@
 import sys
 
-
-
 if (len(sys.argv) != 4):
     print("Not enough arguments")
 else:
