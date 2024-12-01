@@ -105,28 +105,28 @@ else:
                         elif (inside_label == "true"):
                             if (begin == "true"):
                                 if (word_group in current_type):
-                                    print(word + "\t" + tagged_sentence[count][1] + "\t" + "B-" + word_group, file=answer_key)
+                                    print(word + "\t" + "B-" + word_group, file=answer_key)
                                     print(word + "\t" + tagged_sentence[count][1], file=o_output)
                                     count = count + 1
                                 else:
-                                    print(word + "\t" + tagged_sentence[count][1] + "\t" + "O", file=answer_key)
+                                    print(word + "\t" + "O", file=answer_key)
                                     print(word + "\t" + tagged_sentence[count][1], file=o_output)
                                     count = count + 1
                                 begin = "false"
                             elif (word[0:2]!= "</"):
                                 if (word_group in current_type):
-                                    print(word + "\t" + tagged_sentence[count][1] + "\t" + "I-" + word_group, file=answer_key)
+                                    print(word + "\t" + "I-" + word_group, file=answer_key)
                                     print(word + "\t" + tagged_sentence[count][1], file=o_output)
                                     count = count + 1
                                 else:
-                                    print(word + "\t" + tagged_sentence[count][1] + "\t" + "O", file=answer_key)
+                                    print(word + "\t" + "O", file=answer_key)
                                     print(word + "\t" + tagged_sentence[count][1], file=o_output)
                                     count = count + 1
                             elif (word[0:2]== "</"):
                                 inside_label = "false"
                                 current_type = ""
                         else:
-                            print(word + "\t" + tagged_sentence[count][1] + "\t" + "O", file=answer_key)
+                            print(word + "\t" + "O", file=answer_key)
                             print(word + "\t" + tagged_sentence[count][1], file=o_output)
                             count = count + 1
                 print("", file=answer_key)
@@ -135,3 +135,5 @@ else:
         o_output.close()
 
     file.close()
+        
+#python3 data_reformater.py [INPUT_FILE_NAME] [TRAINING_OR_OTHER(In_all_lowercase)] [WORD_GROUP(In_all_uppercase)]
