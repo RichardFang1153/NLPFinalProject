@@ -1,5 +1,25 @@
+Attempt 1:
+
 With the following features:
 For training: 
 current word, current POS tag, current BIO tag, previous two words, previous two POS tags, next two words, next two POS tags
 For dev/test:
 current word, current POS tag, previous two words, previous two POS tags, next two words, next two POS tags
+
+Date BIO tagging Scores (For Development):
+
+Organization BIO tagging Scores (For Development):
+
+
+
+
+
+Attempt 2:
+
+With the following features:
+For training: 
+For dev/test:
+
+Date BIO tagging Scores (For Development):
+
+Organization BIO tagging Scores (For Development): 
