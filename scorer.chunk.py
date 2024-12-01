@@ -62,14 +62,14 @@ def score(keyFileName, responseFileName):
         key_fields = key[i].split('\t')
         response_fields = response[i].split('\t')
 
-        if len(key_fields) != 3 or len(response_fields) != 3:
+        if len(key_fields) != 2 or len(response_fields) != 2:
             print(f"Format error at line {i}")
             print(f"Key line: '{key[i]}' (Fields: {len(key_fields)})")
             print(f"Response line: '{response[i]}' (Fields: {len(response_fields)})")
             return
 
-        key_token, key_pos, key_tag = key_fields
-        response_token, response_pos, response_tag = response_fields
+        key_token, key_tag = key_fields
+        response_token, response_tag = response_fields
 
         if key_token != response_token:
             print(f"Token mismatch at line {i}")
