@@ -1,1 +1,5 @@
 With the following features:
+For training: 
+current word, current POS tag, current BIO tag, previous two words, previous two POS tags, next two words, next two POS tags
+For dev/test:
+current word, current POS tag, previous two words, previous two POS tags, next two words, next two POS tags
