@@ -130,7 +130,7 @@ else:
                             print(word + "\t" + tagged_sentence[count][1], file=o_output)
                             count = count + 1
                 print("", file=answer_key)
-                print("", file=t_output)
+                print("", file=o_output)
         answer_key.close()
         o_output.close()
 
