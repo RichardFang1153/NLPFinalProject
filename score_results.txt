@@ -19,14 +19,13 @@ B-cubed Scores:
   Recall: 0.81
   F1 Score: 0.81
 
-
 Organization BIO tagging Scores (For Development):
-87501 out of 88889 tags correct
+87515 out of 88889 tags correct
 Tagging Scores:
-  Accuracy: 98.44%
-  Precision: 89.72%
-  Recall: 75.58%
-  F1 Score: 82.05%
+  Accuracy: 98.45%
+  Precision: 90.16%
+  Recall: 75.17%
+  F1 Score: 81.99%
 
 B-cubed Scores:
   Precision: 0.82
