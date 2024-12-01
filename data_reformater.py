@@ -76,7 +76,7 @@ else:
 
         
     elif (sys.argv[2] == "other"):
-        answer_key = open("dev_or_test.POS-chunk", "w")
+        answer_key = open("dev_or_test.chunk", "w")
         o_output = open("dev_or_test.POS", "w")
         count = 0
         for line in file:
