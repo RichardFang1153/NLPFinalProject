@@ -1,3 +1,5 @@
+Comment: The actual result output files for the BIO tagging can be found in the testing folder. The _dev_result.chunk files are our BIO tagging output file. The _dev.chunk files are the answer keys.
+
 Attempt 1:
 
 With the following features:
