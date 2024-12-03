@@ -9,7 +9,7 @@ current word, current POS tag, current BIO tag, previous two words, previous two
 For dev/test:
 current word, current POS tag, previous two words, previous two POS tags, next two words, next two POS tags
 
-Date BIO tagging Scores (For Development):
+Date BIO tagging Scores (For Development Group):
 88307 out of 88889 tags correct
 Tagging Scores:
   Accuracy: 99.35%
@@ -22,7 +22,7 @@ B-cubed Scores:
   Recall: 0.81
   F1 Score: 0.81
 
-Organization BIO tagging Scores (For Development):
+Organization BIO tagging Scores (For Development Group):
 87515 out of 88889 tags correct
 Tagging Scores:
   Accuracy: 98.45%
