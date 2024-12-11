@@ -51,3 +51,6 @@ else:
         
     file.close()
     output.close()
+#python3 bio-fixer.py [name_of_file] [addB or minusI]
+#if you want to fix the organization results, make sure to change line 24 with this:
+#print(previous_split[0] + "\t" + "B-ORGANIZATION", file=output)
