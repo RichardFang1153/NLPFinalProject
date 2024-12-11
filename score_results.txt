@@ -17,11 +17,6 @@ Tagging Scores:
   Recall: 84.67%
   F1 Score: 87.51%
 
-B-cubed Scores:
-  Precision: 0.81
-  Recall: 0.81
-  F1 Score: 0.81
-
 Organization BIO tagging Scores (For Development Group):
 87515 out of 88889 tags correct
 Tagging Scores:
@@ -29,13 +24,6 @@ Tagging Scores:
   Precision: 90.16%
   Recall: 75.17%
   F1 Score: 81.99%
-
-B-cubed Scores:
-  Precision: 0.82
-  Recall: 0.82
-  F1 Score: 0.82
-
-
 
 
 
