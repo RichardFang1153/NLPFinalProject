@@ -57,7 +57,7 @@ def score(keyFileName, responseFileName):
             correct += 1
         else:
             incorrect += 1
-            print("Answer Key:" + key_token + " = " + key_tag + "   Our output:" + response_token + " = " + response_tag)
+            print("Line: " + i + "    Answer Key: " + key_token + " = " + key_tag + "   Our output: " + response_token + " = " + response_tag)
 
         # Group count for tagging
         key_label = key_tag.split('-')[0]  # Correcting to split by '-' instead of space
