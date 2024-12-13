@@ -39,7 +39,7 @@ def extract_training_features(training_file, output_file):
             #Here's the dictionary feature, including possible time-related words
             if token.lower() in ["morning", "afternoon", "noon", "evening", "night", "midnight"]:
                             print("\ttime_related=True", end="", file=output)
-                        else:
+            else:
                             print("\ttime_related=False", end="", file=output)
 
             print(f"\t{chunk_tag}", file=output)
