@@ -37,7 +37,7 @@ def extract_training_features(training_file, output_file):
                 print(f"\t2_next_word={two_next[0]}\t2_next_POS={two_next[1]}", end="", file=output)
 
             #Here's the dictionary feature, including possible time-related words
-            if token.lower() in ["morning", "afternoon", "noon", "evening", "midnight"]:
+            if token.lower() in ["morning", "afternoon", "noon", "evening", "night", "midnight"]:
                             print("\ttime_related=True", end="", file=output)
                         else:
                             print("\ttime_related=False", end="", file=output)
@@ -79,8 +79,8 @@ def extract_test_features(test_file, output_file):
                 two_next = lines[i+2].split()
                 print(f"\t2_next_word={two_next[0]}\t2_next_POS={two_next[1]}", end="", file=output)
 
-            #Dictionary deature for test_features
-            if token.lower() in ["morning", "afternoon", "noon", "evening", "midnight"]:
+            #Dictionary feature for test_features
+            if token.lower() in ["morning", "afternoon", "noon", "evening", "night", "midnight"]:
                 print("\ttime_related=True", end="", file=output)
             else:
                 print("\ttime_related=False", end="", file=output)
