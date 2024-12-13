@@ -79,6 +79,14 @@ Tagging Scores:
   Recall: 84.40%
   F1 Score: 87.39%
 
+With dictionary_v2:
+88302 out of 88889 tags correct
+Tagging Scores:
+  Accuracy: 99.34%
+  Precision: 90.59%
+  Recall: 84.40%
+  F1 Score: 87.39%
+
 With is_digit:
 88304 out of 88889 tags correct
 Tagging Scores:
