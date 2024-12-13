@@ -25,15 +25,6 @@ Tagging Scores:
   Recall: 75.17%
   F1 Score: 81.99%
 
-With dictionary:
-88304 out of 88889 tags correct
-Tagging Scores:
-  Accuracy: 99.34%
-  Precision: 90.59%
-  Recall: 84.40%
-  F1 Score: 87.39%
-
-
 With Bio fixer:
 Date add B:
 88293 out of 88889 tags correct
@@ -79,6 +70,14 @@ For training:
 For dev/test:
 
 Date BIO tagging Scores (For Development):
+
+With dictionary:
+88304 out of 88889 tags correct
+Tagging Scores:
+  Accuracy: 99.34%
+  Precision: 90.59%
+  Recall: 84.40%
+  F1 Score: 87.39%
 
 Organization BIO tagging Scores (For Development): 
 
