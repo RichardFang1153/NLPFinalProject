@@ -39,7 +39,12 @@ Tagging Scores:
   F1 Score: 79.40%
 
 Organization minus I:
-
+87295 out of 88889 tags correct
+Tagging Scores:
+  Accuracy: 98.21%
+  Precision: 90.16%
+  Recall: 75.17%
+  F1 Score: 81.99%
 
 ---------------------------------------------------------------------
 
