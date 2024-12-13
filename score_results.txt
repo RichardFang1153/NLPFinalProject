@@ -25,10 +25,23 @@ Tagging Scores:
   Recall: 75.17%
   F1 Score: 81.99%
 
+
 With Bio fixer:
 Date add B:
+88293 out of 88889 tags correct
+Tagging Scores:
+  Accuracy: 99.33%
+  Precision: 84.19%
+  Recall: 88.76%
+  F1 Score: 86.41%
 
 Date minus I:
+88137 out of 88889 tags correct
+Tagging Scores:
+  Accuracy: 99.15%
+  Precision: 90.55%
+  Recall: 84.67%
+  F1 Score: 87.51%
 
 Organization add B:
 87457 out of 88889 tags correct
