@@ -95,6 +95,15 @@ Tagging Scores:
   Recall: 84.61%
   F1 Score: 87.56%
 
+DATE BIO tagging Scores (For Development): 
+With BILOU
+88284 out of 88889 tags correct
+Tagging Scores:
+  Accuracy: 99.32%
+  Precision: 89.79%
+  Recall: 82.31%
+  F1 Score: 85.88%
+
 Organization BIO tagging Scores (For Development): 
 With BILOU
 87337 out of 88889 tags correct
@@ -103,6 +112,5 @@ Tagging Scores:
   Precision: 87.11%
   Recall: 77.73%
   F1 Score: 82.15%
-
 
 
