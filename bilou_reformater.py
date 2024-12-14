@@ -52,7 +52,7 @@ else:
                     if (((previous_2_split[2][0] == "I") or (previous_2_split[2][0] == "B")) and (previous_split[2][0] == "I") and ((split_line[2][0] == "O") or (split_line[2][0] == "B"))):
                         print(previous_split[0] + "\t" + previous_split[1] + "\t" + "L-" + category, file=output)
                     elif ((previous_2_split[2][0] in bio) and (previous_split[2][0] == "B") and ((split_line[2][0] == "O") or (split_line[2][0] == "B"))):
-                        print(previous_split[0] + "\t" + previous_split[1] + "\t" + "U-" + category", file=output)
+                        print(previous_split[0] + "\t" + previous_split[1] + "\t" + "U-" + category, file=output)
                     else:
                         print(previous, end = "", file=output)
                 elif ((len(previous_2_split) != 3) and (len(previous_split) == 3)):
@@ -75,3 +75,4 @@ else:
     file.close()
     output.close()
 
+#python3 bilou_reformater.py [file name] [dev or training] [DATE or ORGANIZATION]
