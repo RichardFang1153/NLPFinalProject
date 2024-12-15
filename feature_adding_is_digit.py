@@ -37,9 +37,9 @@ def extract_training_features(training_file, output_file):
                 print(f"\t2_next_word={two_next[0]}\t2_next_POS={two_next[1]}", end="", file=output)
 
             if token[0].isdigit():
-                            print("\tis_digit=True", end="", file=output)
-                        else:
-                            print("\tis_digit=False", end="", file=output)
+                print("\tis_digit=True", end="", file=output)
+            else:
+                print("\tis_digit=False", end="", file=output)
 
             print(f"\t{chunk_tag}", file=output)
 
