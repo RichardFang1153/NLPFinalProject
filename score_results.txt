@@ -165,7 +165,12 @@ isdigit, current word, current POS tag, current BIO tag, previous two words, pre
 For TEST:
 isdigit, current word, current POS tag, previous two words, previous two POS tags, next two words, next two POS tags
 Original features plus isdigit feature: (For TEST Data)
-
+99305 out of 100069 tags correct
+Tagging Scores:
+  Accuracy: 99.24%
+  Precision: 91.32%
+  Recall: 82.33%
+  F1 Score: 86.59%
 
 
 FINAL RUN WITH FEATURES/TAGGING IMPLEMENTATION THAT RESULTED IN THE BEST ORGANIZATION SCORE:
