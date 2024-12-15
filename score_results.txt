@@ -3,13 +3,13 @@ The _dev_result.chunk files are our BIO tagging output file. The _dev.chunk file
 
 Attempt 1:
 
-With the following features:
+With the following features for BOTH date and organization:
 For training: 
 current word, current POS tag, current BIO tag, previous two words, previous two POS tags, next two words, next two POS tags
-For dev/test:
+For dev:
 current word, current POS tag, previous two words, previous two POS tags, next two words, next two POS tags
 
-Date BIO tagging Scores (For Development Group):
+Date BIO tagging Scores (For Development Data):
 88307 out of 88889 tags correct
 Tagging Scores:
   Accuracy: 99.35%
@@ -17,7 +17,7 @@ Tagging Scores:
   Recall: 84.67%
   F1 Score: 87.51%
 
-Organization BIO tagging Scores (For Development Group):
+Organization BIO tagging Scores (For Development Data):
 87515 out of 88889 tags correct
 Tagging Scores:
   Accuracy: 98.45%
@@ -25,8 +25,21 @@ Tagging Scores:
   Recall: 75.17%
   F1 Score: 81.99%
 
-With Bio fixer:
-Date add B:
+
+--------------------------------------------------------------------
+
+
+Attempt 1.5:
+
+With the following features for BOTH date and organization:
+For training: 
+current word, current POS tag, current BIO tag, previous two words, previous two POS tags, next two words, next two POS tags
+For dev:
+current word, current POS tag, previous two words, previous two POS tags, next two words, next two POS tags
+
+Outputs then fixed with the BIO tag fixer:
+
+Date output fixed by adding missing B: (For Development Data)
 88293 out of 88889 tags correct
 Tagging Scores:
   Accuracy: 99.33%
@@ -34,7 +47,7 @@ Tagging Scores:
   Recall: 88.76%
   F1 Score: 86.41%
 
-Date minus I:
+Date output fixed by subtracting extra I: (For Development Data)
 88137 out of 88889 tags correct
 Tagging Scores:
   Accuracy: 99.15%
@@ -42,7 +55,7 @@ Tagging Scores:
   Recall: 84.67%
   F1 Score: 87.51%
 
-Organization add B:
+Organization output fixed by adding missing B: (For Development Data)
 87457 out of 88889 tags correct
 Tagging Scores:
   Accuracy: 98.39%
@@ -50,7 +63,7 @@ Tagging Scores:
   Recall: 76.99%
   F1 Score: 79.40%
 
-Organization minus I:
+Organization output fixed by subtracting extra I: (For Development Data)
 87295 out of 88889 tags correct
 Tagging Scores:
   Accuracy: 98.21%
@@ -58,20 +71,21 @@ Tagging Scores:
   Recall: 75.17%
   F1 Score: 81.99%
 
+
 ---------------------------------------------------------------------
-
-
 
 
 Attempt 2:
 
-With the following features:
+Date BIO tagging Scores (For Development Data):
+
+
+With the following features for date ONLY:
 For training: 
-For dev/test:
-
-Date BIO tagging Scores (For Development):
-
-With dictionary:
+dictionary, current word, current POS tag, current BIO tag, previous two words, previous two POS tags, next two words, next two POS tags
+For dev:
+dictionary, current word, current POS tag, previous two words, previous two POS tags, next two words, next two POS tags
+Original features plus dictionary feature: (For Development Data)
 88304 out of 88889 tags correct
 Tagging Scores:
   Accuracy: 99.34%
@@ -79,7 +93,13 @@ Tagging Scores:
   Recall: 84.40%
   F1 Score: 87.39%
 
-With dictionary_v2:
+
+With the following features for date ONLY:
+For training: 
+dictionary_v2, current word, current POS tag, current BIO tag, previous two words, previous two POS tags, next two words, next two POS tags
+For dev:
+dictionary_v2, current word, current POS tag, previous two words, previous two POS tags, next two words, next two POS tags
+Original features plus dictionary_v2 feature: (For Development Data)
 88302 out of 88889 tags correct
 Tagging Scores:
   Accuracy: 99.34%
@@ -87,7 +107,13 @@ Tagging Scores:
   Recall: 84.40%
   F1 Score: 87.39%
 
-With is_digit:
+
+With the following features for date ONLY:
+For training: 
+isdigit, current word, current POS tag, current BIO tag, previous two words, previous two POS tags, next two words, next two POS tags
+For dev:
+isdigit, current word, current POS tag, previous two words, previous two POS tags, next two words, next two POS tags
+Original features plus isdigit feature: (For Development Data)
 88304 out of 88889 tags correct
 Tagging Scores:
   Accuracy: 99.34%
@@ -95,8 +121,15 @@ Tagging Scores:
   Recall: 84.61%
   F1 Score: 87.56%
 
-DATE BIO tagging Scores (For Development): 
-With BILOU
+
+DATE BILOU tagging Scores (For Development Data):
+
+With the following features for date ONLY:
+For training: 
+current word, current POS tag, current BIO tag, previous two words, previous two POS tags, next two words, next two POS tags
+For dev:
+current word, current POS tag, previous two words, previous two POS tags, next two words, next two POS tags
+Only using the original features, but the tagging is done in BILOU style: (DATE) (For Development Data) 
 88284 out of 88889 tags correct
 Tagging Scores:
   Accuracy: 99.32%
@@ -104,13 +137,43 @@ Tagging Scores:
   Recall: 82.31%
   F1 Score: 85.88%
 
-Organization BIO tagging Scores (For Development): 
-With BILOU
+
+
+Organization BILOU tagging Scores (For Development Data):
+
+With the following features for Organization ONLY:
+For training: 
+current word, current POS tag, current BIO tag, previous two words, previous two POS tags, next two words, next two POS tags
+For dev:
+current word, current POS tag, previous two words, previous two POS tags, next two words, next two POS tags
+Only using the original features, but the tagging is done in BILOU style: (ORGANIZATION) (For Development Data) 
 87337 out of 88889 tags correct
 Tagging Scores:
   Accuracy: 98.25%
   Precision: 87.11%
   Recall: 77.73%
   F1 Score: 82.15%
+
+
+---------------------------------------------------------------------------------------------------------------
+
+FINAL RUNS (WITH OUR TEST DATA):
+
+FINAL RUN WITH FEATURES/TAGGING IMPLEMENTATION THAT RESULTED IN THE BEST DATE SCORE:
+For training: 
+isdigit, current word, current POS tag, current BIO tag, previous two words, previous two POS tags, next two words, next two POS tags
+For TEST:
+isdigit, current word, current POS tag, previous two words, previous two POS tags, next two words, next two POS tags
+Original features plus isdigit feature: (For TEST Data)
+
+
+
+FINAL RUN WITH FEATURES/TAGGING IMPLEMENTATION THAT RESULTED IN THE BEST ORGANIZATION SCORE:
+For training: 
+current word, current POS tag, current BIO tag, previous two words, previous two POS tags, next two words, next two POS tags
+For TEST:
+current word, current POS tag, previous two words, previous two POS tags, next two words, next two POS tags
+Only using the original features, but the tagging is done in BILOU style: (For TEST Data) 
+
 
 
