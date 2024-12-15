@@ -179,6 +179,13 @@ current word, current POS tag, current BIO tag, previous two words, previous two
 For TEST:
 current word, current POS tag, previous two words, previous two POS tags, next two words, next two POS tags
 Only using the original features, but the tagging is done in BILOU style: (For TEST Data) 
+98475 out of 100069 tags correct
+Tagging Scores:
+  Accuracy: 98.41%
+  Precision: 87.20%
+  Recall: 81.67%
+  F1 Score: 84.35%
+
 
 
 
